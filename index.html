@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passinho do Romano</title>
+    <link rel="stylesheet" href="passinho.css">
+    <script src="passinho.js" defer></script>
+</head>
+<body>
+    <!--titulo-->
+    <div class="titulo">
+        <h1>Codificando mensagens!</h1>
+    </div>
+    <div class="container">
+        <h2>Escreva aqui sua mensagem:</h2>
+        <textarea id="mensagem" rows="4"></textarea>
+
+         <!-- Resposta para mensagem (de)codificada-->
+        <strong>Mensagem:</strong><br>
+        <p></p>
+         
+
+
+        <p>Codificador:</p>
+        <span>
+            <input type="radio" id="base64" name="codigo" value="Base64">
+            <label for="Base64">Base 64</label>
+        </input>
+        
+        
+        <input type="radio" id="cesar" name="codigo" value="César">
+        <label for="César">Cifra de César</label>
+    </input>
+        </span>
+        
+
+<!-- Incremento para Cifra de Cesar escolhida -->
+<div id="incremento">
+<p>Incremento:</p>
+<input type="text" id="increment" name="incremento" value="1">
+<label for="incremento">
+ </label></input>
+</div>
+<!-- escolha o que fazer -->
+    <p>Escolha o que fazer:</p> 
+    <span>
+    <input type="radio" id="code" name="procedimento" onclick="mudaBotao()">
+    <label for="code" >Codificar</label>
+    <input type="radio" id="decode" name="procedimento" onclick="mudaBotao()">
+    <label for="decode">Decodificar</label>
+</span>
+   <!--Botão começar -->
+    <button id="botaoComecar">Começar!</button>
+
+    </div>
+    <!--rodapé da pagina-->
+    <div class="footer-bottom">
+        <Span>Emilly Costa T15. 2022.</Span>
+        <p>Trabalho para o curso de WebDev Full Stack na instituição RESILIA!</p>
+    </div>
+</body>
+</html>
